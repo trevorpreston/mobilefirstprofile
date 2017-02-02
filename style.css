@@ -1,3 +1,513 @@
-body {
-	background-color: blanchedalmond;
+body{
+  color: #525252;
+  margin: 0px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav{
+  background-color: transparent;
+  margin-top: 20%;
+  height: 260px;
+  width: 100px;
+  z-index: 2;
+  float: top;
+  position: fixed;
+  display: none;
+}
+
+h1 {
+  font-family: 'Arvo', serif;
+}
+
+.menu-icon{
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  z-index: 3
+}
+
+
+.scroller{
+  margin: 0px;
+}
+
+
+
+.active{
+  display: inline
+}
+
+
+
+.panel {
+  height: 100vh;
+  width: 100%;
+}
+
+.about{
+  background-color: white;
+  height: 120vh;
+  width: 100%;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.23);
+}
+
+.about h1{
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  font-size: 105px;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding-top: 50px;
+  height: 10%;
+  z-index: 10;
+}
+
+#laundry{
+  text-align: center
+}
+
+#about-container{
+  background-color: white;
+  display: block;
+  position: absolute;
+  width: 50%;
+  margin: 200px 25% 0px;
+  height: 50%
+}
+
+#skills-container{
+  background-color: white;
+  display: none;
+  position: absolute;
+  width: 50%;
+  margin: 15% 25%;
+}
+
+#resume-container{
+  background-color: white;
+  display: none;
+  position: absolute;
+  width: 42%;
+  margin: 10% 29% 0px;
+  height: 57%;
+  overflow: scroll;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#resume{
+  width: 90%;
+}
+
+#info-button-container{
+  position: absolute;
+  width: 450px;
+  margin-left: 35%;
+  bottom: 22%;
+  text-align: center;
+}
+
+
+#info-button-container div{
+  box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: inline-block;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  width: 200px;
+  text-align: left;
+  background-size: 200% 200%;
+  margin: 5px;
+}
+
+#info-button-container div:hover{
+  box-shadow: 0 5px 5px rgba(0,0,0,0.18), 0 5px 10px rgba(0,0,0,0.22);
+
+}
+#skills-button{
+  background: linear-gradient(141deg, #119990 0%, #2B93BA 50%);
+}
+
+#skills-button:hover{
+  background: linear-gradient(270deg, #18a2f0, #18f0b8);
+}
+
+#resume-button{
+  background: linear-gradient(141deg, #2B93BA 0%, #119990 70%);
+}
+
+#resume-button:hover{
+  background: linear-gradient(270deg, #18f0b8, #18a2f0);
+}
+
+.info-button:hover{
+  cursor: pointer
+}
+
+.info-button img{
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+}
+
+.info-button span{
+  vertical-align: middle;
+}
+
+#skills-icon{
+  margin-left: 55px;
+}
+
+#resume-icon{
+  margin-left: 45px;
+}
+
+.contact{
+  background-color: white;
+  height: 110vh;
+  width: 100%;
+}
+
+.nav-el{
+  background-color: #828282;
+  box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.23);
+  float: left;
+  list-style: none;
+  padding: 0px;
+  height: 40px;
+  width: 40px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #828282;
+  margin-left: 10px;
+  margin-top: 8px;
+  z-index: 0
+}
+
+.nav-el:hover{
+  background-color: #3B3B3B;
+  border-color: #3B3B3B;
+  cursor: pointer
+}
+
+.check{
+  float: left;
+  margin-top: 29px;
+  margin-left: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%
+}
+
+#nav-toggle{
+  background-color: transparent;
+}
+
+
+.active-nav{
+  background-color: #5CD6FF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+/*  .nav-el{
+  float: left;
+  list-style: none;
+  padding: 0px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 5px
+}*/
+
+.projects img{
+/*display: inline-block;*/
+  width: 100%;
+}
+
+
+
+
+
+
+#contact-container{
+  width: 80%;
+  margin: auto 10%;
+}
+
+
+
+#opener{
+  font-family: 'Arvo', serif;
+  background-color: #FAFAFA;
+  height: 100vh;
+  width: 100%;
+}
+
+.scroller-parent{
+  position: absolute;
+  font-size: 60px;
+  width: 80vw;
+  text-align: center;
+  margin: 40vh 10vw;
+}
+
+#scroller-2{
+  background-color:black;
+  color: white;
+  display: inline-block;
+  width: 800px;
+  text-align: center;
+  padding: 8px 15px;
+  background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
+  background-size: 600% 600%;
+  -webkit-animation: Gradient 12s ease infinite;
+  -moz-animation: Gradient 12s ease infinite;
+  animation: Gradient 12s ease infinite;
+}
+
+
+/*animated scroller*/
+@-webkit-keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@keyframes Gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+
+.projects{
+  background-color: #303030;
+  height: 120vh;
+  width: 100%;
+  box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
+}
+
+#project-container {
+  width: 80%;
+  margin: 3% auto;
+}
+
+
+#current-project {
+  display: inline-block;
+  background-color: blue;
+  height: 600px;
+  width: 69%;
+  margin: 0 auto;
+}
+
+#project-nav {
+  width: 30%;
+  height: 600px;
+  top: 0px;
+  display: inline-block;
+  background-color: #424242;
+}
+
+#project-nav div{
+  width: 80%;
+  min-width: 200px;
+  height: 100px;
+  margin: 40px auto;
+  background-color: yellow;
+}
+
+
+.github-button{
+  position: absolute;
+  color: white;
+  font-size: 17px;
+  padding: 6px;
+  height: 44px;
+  background-size: 700% 700%;
+  left: 2%;
+  top: 2%;
+  z-index: 10;
+}
+
+.github-button *{
+  position: static;
+  float: left;
+}
+
+
+.github-button span{
+  width: 200px;
+  margin-top: 15px;
+  background-color: rgba(59,59,59, .8);
+  margin-left: -10px;
+  padding: 3px;
+  border-radius: 6%
+}
+
+.git-logo-bg{
+  position: relative;
+  background: linear-gradient(220deg, #E5FF00, #0EAD00, #E5FF00);
+  background-size: 600% 600%;
+  -webkit-animation: Gradient 4s ease infinite;
+  -moz-animation: Gradient 4s ease infinite;
+  animation: Gradient 4s ease infinite;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  padding: 5px;
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  opacity: 1
+}
+
+
+
+.git-logo-bg:hover{
+  background: linear-gradient(220deg, #DDFF00, #7BFF57);
+  cursor: pointer;
+}
+
+
+#proj1-github{
+  display: none;
+  top: 2%;
+  left: 7%
+}
+
+#proj1-see{
+  display: none;
+}
+#proj2-see{
+  display: none;
+}
+#proj3-see{
+  display: none;
+}
+#proj4-see{
+  display: none;
+}
+
+#proj2-github{
+  display: none;
+}
+
+#proj3-github{
+  display: none;
+}
+
+#proj4-github{
+  display: none;
+}
+
+
+
+.white-github{
+
+}
+
+.category-head{
+  color: #E0E0E0;
+  text-align: center;
+  font-size: 65px;
+  margin: 20px auto;
+}
+
+
+
+
+.contact{
+  background-color: white;
+  height: 110vh;
+  width: 100%;
+  padding-top: 45px;
+  text-align: center;
+}
+
+
+
+#contact-head{
+  color: #525252;
+}
+
+#contact-container{
+  margin-top: 10%;
+}
+
+#contact-container p{
+  margin-bottom: 40px;
+}
+
+#email-container{
+  margin-top: 6%;
+}
+
+#email-container p{
+  margin-bottom: 40px;
+}
+
+#email-button{
+  background: linear-gradient(141deg, #119990 0%, #2B93BA 50%);
+  box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: inline-block;
+  color: white;
+  padding-top: 10px;
+  font-size: 30px;
+  height: 50px;
+  width: 300px;
+  text-align: left;
+  background-size: 200% 200%;
+  margin: 5px;
+}
+
+#email-button:hover{
+  background: linear-gradient(270deg, #18a2f0, #18f0b8);
+}
+
+#email-button img{
+  vertical-align: middle;
+  margin-left: 70px;
+}
+
+#email-address{
+  display: none;
+  font-size: 35px;
+  background-color: #E0E0E0;
+  width: 400px;
+  margin: 20px auto;
+  padding: 13px;
+}
+
+
+.social-icons {
+  opacity: .5;
+  width: 100px;
+  height: auto;
+  padding: 10px;
+}
+
+.social-icons:hover{
+  opacity: .8;
+}
+
+
+@media only screen and (min-width: 1800px) {
+    /* For mobile phones: */
+    #current-project {
+      background-color: green;
+      height: 480px;
+      width: 640px;
+      margin: 0 auto;
+    }
 }

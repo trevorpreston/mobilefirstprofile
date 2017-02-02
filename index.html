@@ -1,15 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="./style.css">
-	<script type='text/javascript' src='./js/main.js'></script>
-</head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trevor Preston</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <script type='text/javascript' src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script type='text/javascript' src='./js/main.js'></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="./js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  <script src="./js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script src="./js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 </head>
 <body>
-	<h1>Matt loves CSS</h1>
+<nav id="nav" class="anchor-nav">
+  <a href="#section-1" class="nav-el" id="anchor1">
+    <img src="./images/icons/profile.png" href="#section-1" class="menu-icon">
+  </a>
+  <div class="check tog" id="nav-tog-el-1"></div>
+  <a href="#section-2" class="nav-el" id="anchor2">
+    <img src="./images/icons/projects.png" href="#section-2" class="menu-icon">
+  </a>
+  <div class="check tog" id="nav-tog-el-2"></div>
+  <a href="#section-3" class="nav-el" id="anchor3">
+    <img src="./images/icons/contact.png" href="#section-3" class="menu-icon">
+  </a>
+  <div class="check tog" id="nav-tog-el-4"></div>
+</nav>
+  <section class="panel opener" id="opener">
+      <h1 class="scroller-parent">
+        <p class="scroller" id="scroller-1">Trevor Preston builds</p>
+        <p class="scroller" id="scroller-2">a full stack developer</p>
+      </h1>
+  </section>
+<div id="pinContainer">
+  <section class="panel about" id="section-1">
+    <h1>Hi.</h1>
+    <div id=info-wrapper>
+      <div id="about-container">
+        <p>My name's Trevor.   I am a web developer, data-analyst, tinkerer in the "internet of things" and backyard scientist.  I take things apart, put things together, and solve interesting problems with a blend of intuitive elegance and a scrappy "fail-fast-and-learn-faster" attitude.</p>
+
+        <p>Whether it's building servers, designing pretty UX, or outfitting ordinary household objects with arduinos - I get attached to my projects.  I love what I build and build what I love (ok, sometimes I also build what I don't love).  The backend is usually where my motor runs best, but I am forever intrigued by the frontend and the evolving science of how people interface with technology.</p>
+
+        <p>Who am I when I am not coding?  I like to adventure and put myself in mildly-risky (but exciting!) situations.  On the weekends you'll find me making an extra cheesy breakfast burrito then riding mountain bikes, climbing rocks, or playing on snowboards.</p></br><p id="laundry">...Then I'll probably do laundry, because it's the weekend.</p>
+
+      </div>
+      <div id="skills-container">
+
+        <h2>Web Development:</h2>
+        <p>
+        Front-End:  React  /  Javascript  /  JQuery  /  D3  /  ChartJS  /  HTML5  /  CSS3  /  JSX  /  XML  /  ERB  </br>
+        Back-End:  Node  /  Express  /  Rails    </br>
+        Databases: MongoDB   /   PSQL  /  MyQL  </br>
+        Deployment:  AWS  /  Heroku  </br>
+        </p>
+
+        <h2>Datascience:</h2>
+        <p>
+        Python  /  PANDAS  /  Scikit Learn
+        </p>
+
+        <h2>Computer Vision & Astrophysics:</h2>
+        <p>
+        Python  /  SciPy  /  IRAF
+        </p>
+
+        <h2>3d Printing, CNC, CAM, 3d Modeling:</h2>
+        <p>
+        Solidworks  /  Rhino  /  AutoCAD  /  Autodesk  /  Sketchup  /  MasterCAM
+        </p>
+
+        <h2>Hardware:</h2>
+        <p>
+        Raspberry Pi  /  Arduino  /  Raspbian
+        </p>
+      </div>
+      <div id="resume-container">
+       <img src="./images/resume.png" alt="" id="resume">
+      </div>
+    </div>
+    <div id="info-button-container">
+      <div type="" id="skills-button" class="info-button">
+        <img src="./images/icons/skills.png" alt="" class="menu-icon" id="skills-icon">
+        <span>Skills</span>
+      </div>
+      <div type="" id="resume-button" class = "info-button">
+        <img src="./images/icons/resume.png" alt="" class="menu-icon" id="resume-icon">
+        <span>Resume</span>
+      </div>
+    </div>
+  </section>
+  <section class="panel projects" id="section-2">
+    <h1 class="category-head">Projects</h1>
+    <div id="project-container">
+    <div id="current-project"></div>
+    <div id="project-nav">
+      <div class="project-selector"></div>
+      <div class="project-selector">words</div>
+      <div class="project-selector"></div>
+      <div class="project-selector"></div>
+    </div>
+    </div>
+  </section>
+  <section class="panel contact" id="section-3">
+    <h1 class="category-head" id="contact-head">I'm Online!</h1>
+    <div id="contact-container">
+      <p>I am on the web.  Check out my latest projects on github.  Connect with me on LinkedIn.</p>
+      <a href="https://github.com/trevorpreston">
+        <img class="social-icons" src="./images/icons/github-icon.png" alt="">
+      </a>
+      <a id="linkedin" href="https://www.linkedin.com/in/trevpreston">
+        <img class="social-icons" src="./images/icons/linkedin-icon.png" alt="">
+      </a>
+    </div>
+    <div id="email-container">
+      <p>or get in touch via email</p>
+      <div type="" id="email-button" class="info-button">
+        <img src="./images/icons/contact.png" alt="" class="menu-icon" id="skills-icon">
+        <span id="email-toggle-button">Email Me</span>
+      </div>
+      <p id="email-address">tpreston345@gmail.com</p>
+    </div>
+  </section>
+</div>
 </body>
-</html>
+
+
 
