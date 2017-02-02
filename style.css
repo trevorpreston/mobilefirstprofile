@@ -263,11 +263,11 @@ h1 {
   width: 800px;
   text-align: center;
   padding: 8px 15px;
-  background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
+  background: linear-gradient(270deg, #db5640, #18a2f0, #18f0b8);
   background-size: 600% 600%;
-  -webkit-animation: Gradient 12s ease infinite;
-  -moz-animation: Gradient 12s ease infinite;
-  animation: Gradient 12s ease infinite;
+  -webkit-animation: Gradient 9s ease infinite;
+  -moz-animation: Gradient 9s ease infinite;
+  animation: Gradient 9s ease infinite;
 }
 
 
@@ -299,7 +299,7 @@ h1 {
 }
 
 #project-container {
-  width: 80%;
+  width: 70%;
   margin: 3% auto;
   display: flex
 }
@@ -308,31 +308,36 @@ h1 {
 #current-project {
   display: inline-block;
   background-color: blue;
-  height: 600px;
-  width: 69%;
+  height: 650px;
+  width: 89%;
   margin: 0 auto;
 }
 
 #project-description {
   background-color: pink;
-  width: 100%;
-  height: 20%;
+  float: right;
+  bottom: 0px;
+  width: 30%;
+  height: 100%;
 }
 
 #project-nav {
-  width: 30%;
-  height: 600px;
+  width: 10%;
+  height: 650px;
   top: 0px;
   display: inline-block;
-  background-color: #424242;
 }
 
-#project-nav div{
-  width: 80%;
+.project-selector {
+  width: 90%;
   min-width: 200px;
-  height: 100px;
-  margin: 40px auto;
-  background-color: yellow;
+  height: 145px;
+  margin: 0px auto 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #424242;
+  color: #fafafa;
+  font-size: 35px;
 }
 
 
