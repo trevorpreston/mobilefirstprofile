@@ -2,36 +2,12 @@ console.log('javascript TWO connected!')
 
 $(function () {
   //event listeners
-  function createProj1Events(){
-    var $pic1 = $('#proj1-pic');
-    var $proj1Desc=$('#proj1-desc');
-    var $proj1Hitbox = $('#proj1-hitbox')
+  $('.project-selector').on('mouseenter', updateProjectDisplay)
 
-    $pic1.on('mouseenter', function(){
-      console.log('huva!');
-      $proj1Desc.css({'display':'block', 'height':$pic1.height()});
-      $pic1.css('opacity', '1');
-      $('#proj1-github').css('display', 'block')
-
-      $('#proj2-github').css('display', 'none')
-      $('#proj3-github').css('display', 'none')
-      $('#proj4-github').css('display', 'none')
-    })
-
-    $pic1.on('mouseleave', function(){
-      console.log('off')
-      $proj1Desc.css('display', 'none');
-      $pic1.css('opacity', '.6')
-    })
-
-    $('#proj1-github').on('mouseenter', function(){
-      $('#proj1-see').css('display', 'block')
-    })
-
-    $('#proj1-github').on('mouseleave', function(){
-      $('#proj1-see').css('display', 'none')
-    })
+  function updateProjectDisplay(){
+    $('#current-project').css('background-image',"url('./images/projects/" + event.target.id +".png')")
   }
+
 
   function createProj2Events(){
     var $pic2 = $('#proj2-pic');
@@ -182,7 +158,6 @@ $(function () {
 
 
 
-  createProj1Events();
   createProj2Events();
   createProj3Events();
   createProj4Events();
