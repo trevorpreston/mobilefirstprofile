@@ -1,12 +1,30 @@
 console.log('javascript TWO connected!')
 
-$(function () {
+$(function() {
   //event listeners
   $('.project-selector').on('mouseenter', updateProjectDisplay)
 
   function updateProjectDisplay(){
     $('#current-project').css('background-image',"url('./images/projects/" + event.target.id +".png')")
   }
+
+  function activeProject(){
+    $('.project-selector').removeClass('active-project')
+    $(this).addClass('active-project')
+    // console.log($(this))
+    // if($(this)!=$('#robotanist') && $('#robotanist').hasClass('active-project')){
+    //   $('#robotanist').removeClass('active-project')
+    // }
+    // $(this).removeClass()
+    // $(this).addClass('project-selector active-project')
+    // event.target.addClass('project-selector active-project')
+  }
+
+
+  $('.project-selector').on('mouseenter', activeProject)
+
+
+
 
 
   function createProj2Events(){
