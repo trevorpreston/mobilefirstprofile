@@ -295,17 +295,17 @@ h1 {
 
 #project-container {
   width: 70%;
-  margin: 4% auto;
+  margin: 20px auto 0;
 }
 
 
 #current-project {
   display: inline-block;
-  background-image: url('./images/projects/climbr.png');
+  background-image: url('./images/projects/robotanist.png');
   background-size: auto 100%;
   background-repeat: no-repeat;
-  height: 600px;
-  width: 74%;
+  height: 680px;
+  width: 100%;
 }
 
 #project-lower-wrapper {
@@ -318,6 +318,8 @@ h1 {
   color: white;
   bottom: 0px;
   width: 24%;
+  height: 660px;
+  float: right;
 }
 
 #project-nav {
@@ -331,7 +333,6 @@ h1 {
 .project-selector {
   width: 24%;
   height: 80px;
-  margin: 0px auto;
   padding-top: 10px;
   padding-left: 10px;
   background-color: #757575;
@@ -340,9 +341,11 @@ h1 {
   box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.23)
 }
 
-.project-selector:hover{
+.active-project{
   background-color: #3B3B3B;
 }
+
+
 
 .animated-border {
   
