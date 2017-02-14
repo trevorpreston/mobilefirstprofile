@@ -304,7 +304,7 @@ h1 {
   background-image: url('./images/projects/robotanist.png');
   background-size: auto 100%;
   background-repeat: no-repeat;
-  height: 680px;
+  height: 60%;
   width: 100%;
 }
 
@@ -345,11 +345,19 @@ h1 {
   background-color: #3B3B3B;
 }
 
-
-
-.animated-border {
-  
+.proj-desc {
+  display: none;
 }
+
+.active-desc {
+  display: block;
+}
+
+#project-description p {
+  font-size: 18px;
+}
+
+
 
 .github-button{
   position: absolute;

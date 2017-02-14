@@ -11,178 +11,22 @@ $(function() {
   function activeProject(){
     $('.project-selector').removeClass('active-project')
     $(this).addClass('active-project')
-    // console.log($(this))
-    // if($(this)!=$('#robotanist') && $('#robotanist').hasClass('active-project')){
-    //   $('#robotanist').removeClass('active-project')
-    // }
-    // $(this).removeClass()
-    // $(this).addClass('project-selector active-project')
-    // event.target.addClass('project-selector active-project')
+    let currentProjDescId = '#'+$(this).attr('id') + '-desc'
+    console.log(currentProjDescId)
+
+    $('.proj-desc').removeClass('active-desc')
+    $(currentProjDescId).addClass('active-desc')
+  }
+
+  function activeDesc(){
+    $('.project-selector').removeClass('active-project')
+    $(this).addClass('active-project')
   }
 
 
   $('.project-selector').on('mouseenter', activeProject)
 
 
-
-
-
-  function createProj2Events(){
-    var $pic2 = $('#proj2-pic');
-    var $proj2Desc = $('#proj2-desc')
-    var $proj234Container = $('#project234-container')
-    $pic2.on('mouseenter', function(){
-      console.log('huva!');
-      $proj2Desc.css({'display':'block', 'height':$proj234Container.height()});
-      $pic2.css('opacity', '1');
-      $('#proj2-github').css('display', 'block')
-
-      $('#proj1-github').css('display', 'none')
-      $('#proj3-github').css('display', 'none')
-      $('#proj4-github').css('display', 'none')
-    })
-
-    $pic2.on('mouseleave', function(){
-      console.log('off')
-      $proj2Desc.css('display', 'none');
-      $pic2.css('opacity', '.6')
-    })
-
-    $('#proj2-github').on('mouseenter', function(){
-      $('#proj2-see').css('display', 'block')
-    })
-
-    $('#proj2-github').on('mouseleave', function(){
-      $('#proj2-see').css('display', 'none')
-    })
-  }
-
-  function createProj3Events(){
-    var $pic3 = $('#proj3-pic');
-    var $proj3Desc = $('#proj3-desc')
-    var $proj234Container = $('#project234-container')
-
-    $pic3.on('mouseenter', function(){
-      console.log('huva!');
-      $proj3Desc.css({'display':'block', 'height':$proj234Container.height()});
-      $pic3.css('opacity', '1');
-      $('#proj3-github').css('display', 'block')
-
-      $('#proj1-github').css('display', 'none')
-      $('#proj2-github').css('display', 'none')
-      $('#proj4-github').css('display', 'none')
-    })
-
-    $pic3.on('mouseleave', function(){
-      console.log('off')
-      $proj3Desc.css('display', 'none');
-      $pic3.css('opacity', '.6')
-    })
-
-    $('#proj3-github').on('mouseenter', function(){
-      $('#proj3-see').css('display', 'block')
-    })
-
-    $('#proj3-github').on('mouseleave', function(){
-      $('#proj3-see').css('display', 'none')
-    })
-  }
-
-  function createProj4Events(){
-    var $pic4 = $('#proj4-pic');
-    var $proj4Desc = $('#proj4-desc')
-    var $proj234Container = $('#project234-container')
-
-    $pic4.on('mouseenter', function(){
-      console.log('huva!');
-      $proj4Desc.css({'display':'block', 'height':$proj234Container.height()});
-      $pic4.css('opacity', '1');
-      $('#proj4-github').css('display', 'block')
-
-      $('#proj1-github').css('display', 'none')
-      $('#proj2-github').css('display', 'none')
-      $('#proj3-github').css('display', 'none')
-    })
-
-    $pic4.on('mouseleave', function(){
-      console.log('off')
-      $proj4Desc.css('display', 'none');
-      $pic4.css('opacity', '.6')
-    })
-
-    $('#proj4-github').on('mouseenter', function(){
-      $('#proj4-see').css('display', 'block')
-    })
-
-    $('#proj4-github').on('mouseleave', function(){
-      $('#proj4-see').css('display', 'none')
-    })
-  }
-
-  function toggleOffGitButtons(){
-    $('#projects-wrapper').on('mouseleave', function(){
-      $('.github-button').css('display', 'none')
-    })
-  }
-
-  function toggleSkills(){
-    if ($('#about-container').css('display') !== 'none'){
-      $('#about-container').slideToggle('fast');
-      $('#skills-container').slideToggle('fast')
-    } else if ($('#resume-container').css('display') !== 'none'){
-      $('#resume-container').slideToggle('fast')
-      $('#skills-container').slideToggle('fast')
-    } else {
-      $('#about-container').slideToggle('fast');
-      $('#skills-container').slideToggle('fast')
-    }
-    // $('#info-wrapper').children().slideToggle('fast')
-  }
-
-  function toggleResume(){
-    if ($('#about-container').css('display') !== 'none'){
-      $('#about-container').slideToggle('fast');
-      $('#resume-container').slideToggle('fast')
-    } else if ($('#skills-container').css('display') !== 'none'){
-      $('#skills-container').slideToggle('fast')
-      $('#resume-container').slideToggle('fast')
-    } else {
-      $('#about-container').slideToggle('fast');
-      $('#resume-container').slideToggle('fast')
-    }
-  }
-
-  function toggleEmail(){
-    $('#email-button').on('click', function(){
-      console.log('toggling email')
-      $('#email-address').slideToggle(400)
-    })
-  }
-
-
-  function skillsButton(){
-    $('#skills-button').on('click', toggleSkills)
-  }
-
-  function resumeButton(){
-    $('#resume-button').on('click', toggleResume)
-  }
-
-  function navFadein(){
-    $('nav').fadeToggle('slow','linear')
-  }
-
-
-
-
-
-  createProj2Events();
-  createProj3Events();
-  createProj4Events();
-  skillsButton();
-  resumeButton();
-  toggleOffGitButtons();
-  toggleEmail();
   // hideContact();
 
 
@@ -222,11 +66,6 @@ $(function() {
   }
 
   cycleScroller(scroller);
-
-  // new ScrollMagic.Scene({triggerElement: ".about"})
-  //       .setClassToggle("nav", "active") // add class toggle
-  //       // .addIndicators() // add indicators (requires plugin)
-  //       .addTo(controller);
 
 
 var controller2 = new ScrollMagic.Controller({
