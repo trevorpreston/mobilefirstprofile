@@ -295,6 +295,7 @@ h1 {
 
 #project-container {
   width: 70%;
+  min-width: 1100px;
   margin: 20px auto 0;
 }
 
@@ -302,10 +303,10 @@ h1 {
 #current-project {
   display: inline-block;
   background-image: url('./images/projects/robotanist.png');
-  background-size: auto 120%;
+  background-size: auto 135%;
   background-repeat: no-repeat;
-  height: 500px;
-  width: 90%;
+  height: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -324,7 +325,7 @@ h1 {
 }
 
 #project-nav {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   height: 90px;
   top: 0px;
@@ -357,7 +358,7 @@ h1 {
 }
 
 #project-description p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .project-name {
