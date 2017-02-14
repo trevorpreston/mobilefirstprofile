@@ -67,6 +67,10 @@ h1 {
   z-index: 10;
 }
 
+.mobileDetected {
+  display: none;
+}
+
 #laundry{
   text-align: center
 }
@@ -106,16 +110,17 @@ h1 {
 #info-button-container{
   text-align: center;
   width: 500px;
-  margin: 50px auto 0;
+  margin: 150px auto 0;
 }
 
 
-#info-button-container div{
+.info-button{
+  background: linear-gradient(120deg, #a51e00, #fffa00);
   box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.23);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   display: inline-block;
   color: white;
-  padding: 5px;
+  padding: 25px 10px;
   font-size: 20px;
   width: 200px;
   text-align: left;
@@ -123,11 +128,12 @@ h1 {
   margin: 5px;
 }
 
-#info-button-container div:hover{
+.info-button:hover{
+  background: linear-gradient(120deg, #af351a, #fffb51);
   box-shadow: 0 5px 5px rgba(0,0,0,0.18), 0 5px 10px rgba(0,0,0,0.22);
 
 }
-#skills-button{
+/*#skills-button{
   background: linear-gradient(141deg, #119990 0%, #2B93BA 50%);
 }
 
@@ -141,7 +147,7 @@ h1 {
 
 #resume-button:hover{
   background: linear-gradient(270deg, #18f0b8, #18a2f0);
-}
+}*/
 
 .info-button:hover{
   cursor: pointer
@@ -334,7 +340,7 @@ display: inline-block;
 }
 
 .project-selector {
-  width: 24%;
+  width: 23.8%;
   height: 80px;
   padding-left: 10px;
   padding-top: 2px;
@@ -378,14 +384,20 @@ display: inline-block;
 .githubBtn {
   display: flex;
   right: 30px;
-  width: 80%;
-  padding: 15px;
+  width: 85%;
+  padding: 15px 6px;
   margin: 0 auto 60px;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   text-decoration: none;
   color: white;
   background: linear-gradient(120deg, #a51e00, #fffa00);
+  background-size: 150% 150%;
+}
+
+.githubBtn:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background: linear-gradient(120deg, #af351a, #fffb51);
   background-size: 150% 150%;
 }
 
@@ -395,7 +407,7 @@ display: inline-block;
 
 
 .github-link{
-  margin-left: 15px;
+  margin-left: 12px;
   margin-right: 4px;
   width: 30px;  
   height: 30px;
@@ -526,9 +538,8 @@ display: inline-block;
 }
 
 #email-button{
-  background: linear-gradient(141deg, #119990 0%, #2B93BA 50%);
+  background: linear-gradient(270deg, #18a2f0, #18f0b8);
   box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.23);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   display: inline-block;
   color: white;
   padding-top: 10px;
@@ -536,17 +547,24 @@ display: inline-block;
   height: 50px;
   width: 300px;
   text-align: left;
-  background-size: 200% 200%;
   margin: 5px;
 }
 
 #email-button:hover{
   background: linear-gradient(270deg, #18a2f0, #18f0b8);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 #email-button img{
   vertical-align: middle;
   margin-left: 70px;
+  margin-top: 15px;
+}
+
+#email-button span{
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 14px;
 }
 
 #email-address{
@@ -570,18 +588,22 @@ display: inline-block;
   opacity: .8;
 }
 
-@media only screen 
+/*@media only screen 
   and (min-device-height: 500px) 
   and (max-device-height: 700px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-    #current-project {
-      background-color: green;
-      height: 480px;
-      width: 640px;
-      margin: 0 auto;
+    * {
+      display: none;
     }
-}
+
+    .mobileDetected {
+      display: block;
+      color: black;
+      font-size: 25px
+
+    }
+}*/
 
 
 @media only screen 
