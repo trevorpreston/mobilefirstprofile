@@ -25,8 +25,75 @@ $(function() {
     $(this).addClass('active-project')
   }
 
-
   $('.project-selector').on('mouseenter', activeProject)
+
+
+  function toggleSkills(){
+    if ($('#about-container').css('display') !== 'none'){
+      $('#about-container').slideToggle('fast');
+      $('#skills-container').slideToggle('fast')
+    } else if ($('#resume-container').css('display') !== 'none'){
+      $('#resume-container').slideToggle('fast')
+      $('#skills-container').slideToggle('fast')
+    } else {
+      $('#about-container').slideToggle('fast');
+      $('#skills-container').slideToggle('fast')
+    }
+    // $('#info-wrapper').children().slideToggle('fast')
+  }
+
+  function toggleResume(){
+    if ($('#about-container').css('display') !== 'none'){
+      $('#about-container').slideToggle('fast');
+      $('#resume-container').slideToggle('fast')
+    } else if ($('#skills-container').css('display') !== 'none'){
+      $('#skills-container').slideToggle('fast')
+      $('#resume-container').slideToggle('fast')
+    } else {
+      $('#about-container').slideToggle('fast');
+      $('#resume-container').slideToggle('fast')
+    }
+  }
+
+  function toggleEmail(){
+    $('#email-button').on('click', function(){
+      console.log('toggling email')
+      $('#email-address').slideToggle(400)
+    })
+  }
+
+  function toggleOffGitButtons(){
+    $('#projects-wrapper').on('mouseleave', function(){
+      $('.github-button').css('display', 'none')
+    })
+  }  
+
+
+
+  function skillsButton(){
+    $('#skills-button').on('click', toggleSkills)
+  }
+
+  function resumeButton(){
+    $('#resume-button').on('click', toggleResume)
+  }
+
+  function navFadein(){
+    $('nav').fadeToggle('slow','linear')
+  }
+
+
+
+
+
+
+  skillsButton();
+  resumeButton();
+
+  toggleOffGitButtons();
+  toggleEmail();
+
+
 
 
   // hideContact();
