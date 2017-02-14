@@ -1,5 +1,7 @@
 body{
   color: #525252;
+  height: 100%;
+  width: 100%;
   margin: 0px;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -306,6 +308,7 @@ h1 {
   background-size: auto 135%;
   background-repeat: no-repeat;
   margin: 0 auto;
+  height: 200px;
 }
 
 #project-lower-wrapper {
@@ -551,10 +554,9 @@ h1 {
   opacity: .8;
 }
 
-
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
+  and (min-device-height: 500px) 
+  and (max-device-height: 700px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     #current-project {
@@ -562,6 +564,29 @@ h1 {
       height: 480px;
       width: 640px;
       margin: 0 auto;
+    }
+}
+
+
+@media only screen 
+  and (min-device-width: 900px) 
+  and (max-device-width: 1300px)
+  {
+    #current-project {
+      height: 400px;
+    }
+    #project-description {
+      height: 380px;
+    }
+    #project-description p {
+      font-size: 13px;
+    }
+    #about-container p {
+      font-size: 13px;
+    }
+    .githubBtn {
+      font-size: 13px;
+      width: 140px;
     }
 }
 
