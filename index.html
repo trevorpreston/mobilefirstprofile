@@ -45,8 +45,17 @@
         <p>Whether it's building servers, designing pretty UX, or outfitting ordinary household objects with arduinos - I get attached to my projects.  I love what I build and build what I love (ok, sometimes I also build what I don't love).  The backend is usually where my motor runs best, but I am forever intrigued by the frontend and the evolving science of how people interface with technology.</p>
 
         <p>Who am I when I am not coding?  I like to adventure and put myself in mildly-risky (but exciting!) situations.  On the weekends you'll find me making an extra cheesy breakfast burrito then riding mountain bikes, climbing rocks, or playing on snowboards.</p></br><p id="laundry">...Then I'll probably do laundry, because it's the weekend.</p>
-
-      </div>
+        <div id="info-button-container">
+          <div type="" id="skills-button" class="info-button">
+            <img src="./images/icons/skills.png" alt="" class="menu-icon" id="skills-icon">
+            <span>Skills</span>
+          </div>
+          <div type="" id="resume-button" class = "info-button">
+            <img src="./images/icons/resume.png" alt="" class="menu-icon" id="resume-icon">
+            <span>Resume</span>
+          </div>
+        </div>
+      </div>  
       <div id="skills-container">
 
         <h2>Web Development:</h2>
@@ -81,16 +90,6 @@
        <img src="./images/resume.png" alt="" id="resume">
       </div>
     </div>
-    <div id="info-button-container">
-      <div type="" id="skills-button" class="info-button">
-        <img src="./images/icons/skills.png" alt="" class="menu-icon" id="skills-icon">
-        <span>Skills</span>
-      </div>
-      <div type="" id="resume-button" class = "info-button">
-        <img src="./images/icons/resume.png" alt="" class="menu-icon" id="resume-icon">
-        <span>Resume</span>
-      </div>
-    </div>
   </section>
   <section class="panel projects" id="section-2">
     <h1 class="category-head">Projects</h1>
@@ -119,22 +118,22 @@
           <div id="robotanist-desc" class="proj-desc active-desc">
             <p>RoBotanist is a plant watering robot.  It's composed of a Raspberry Pi that is set up as a NodeJS server which controls a watering pump.  Users can access the companion app through their browser to select what plant they want to water.  The app then uses its custom API to query a database of plants to retrieve data on how often that plant should be watered.  This data is then posted as an HTTP request to the Node server on the Pi which remotely configures RoBotanist's watering frequency.  There is also a "water now" button for those who prefer manual control.
             </p>
-            <div class="githubBtn">Check it out on Github!</div>
+            <a type="" class="githubBtn" href="https://github.com/trevorpreston/roBotany" target="_blank"><img class="github-link" src="./images/icons/white-github.png" alt=""><span>Check it out on Github!</span></a>
           </div>
           <div id="gitocracy-desc" class="proj-desc">
             <p>Gitocracy is a platform that seeks to democratize project development.  Intended for open-source or community projects, Gitocracy allows developers to link their project's GitHub repo to the platform.  Gitocracy then uses GitHub's API to retrieve data from the repos "issues" and displays the information so that users can see what bugs and features are currently being worked on.  Users are then able to suggest features for the product and use an upvote/downvote system to nominate other users' suggestions.  Devs can then decide to add suggestions as issues.
             </p>
-            <div class="githubBtn">Check it out on Github!</div>
+            <a type="" class="githubBtn" href="https://github.com/trevorpreston/Project_Democracy" target="_blank"><img class="github-link" src="./images/icons/white-github.png" alt=""><span>Check it out on Github!</span></a>
           </div>
           <div id="climbr-desc" class="proj-desc">
             <p>Climbr is an app for rock climbers. It sets out to be the first graphically oriented database where climbers can access climbing routes and locations, all submitted by their peers.  
             </p>
-            <div class="githubBtn">Check it out on Github!</div>
+            <a type="" class="githubBtn" href="https://github.com/trevorpreston/climbr-lfg" target="_blank"><img class="github-link" src="./images/icons/white-github.png" alt=""><span>Check it out on Github!</span></a>
           </div>
           <div id="sharebear-desc" class="proj-desc">
             <p>Sharebear is a lending application made in React that offers users the ability to register and share items with their neighbors. Guests are able to search by zipcode and browse through a list of available items to borrow. Once a guest registers, they can list items or make arrangements to borrow items from others.
             </p>
-            <div class="githubBtn">Check it out on Github!</div>
+            <a type="" class="githubBtn" href="https://github.com/Share-Bear/ShareBear/" target="_blank"><img class="github-link" src="./images/icons/white-github.png" alt=""><span>Check it out on Github!</span></a>
           </div>
         </div>
         </div>

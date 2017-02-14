@@ -104,11 +104,9 @@ h1 {
 }
 
 #info-button-container{
-  position: absolute;
-  width: 450px;
-  margin-left: 35%;
-  bottom: 22%;
   text-align: center;
+  width: 500px;
+  margin: 50px auto 0;
 }
 
 
@@ -226,10 +224,11 @@ h1 {
   margin-top: 5px
 }*/
 
-.projects img{
-/*display: inline-block;*/
+/*.projects img{
+display: inline-block;
   width: 100%;
 }
+*/
 
 #contact-container{
   width: 80%;
@@ -296,46 +295,46 @@ h1 {
 }
 
 #project-container {
-  height: 65%;
+  height: 75%;
   width: 70%;
-  margin: 20px auto 0;
+  margin: 40px auto 0;
 }
 
 
 #current-project {
   display: inline-block;
   background-image: url('./images/projects/robotanist.png');
-  background-size: auto 135%;
+  background-size: auto 120%;
   background-repeat: no-repeat;
   margin: 0 auto;
-  height: 200px;
 }
 
 #project-lower-wrapper {
   display: flex;
+  height: 70%;
 }
 
 #project-description {
-  background-color: rgba(0,0,0,0.7);
-  padding: 10px 22px;
+  background-color: rgba(0,0,0,0.75);
+  padding: 1%;
   color: white;
   bottom: 0px;
   width: 22%;
-  height: 480px;
+  height: 96%;
   float: right;
 }
 
 #project-nav {
   width: 100%;
   margin: 0 auto;
-  height: 90px;
+  height: 84px;
   top: 0px;
   display: flex;
   justify-content: space-between;
 }
 
 .project-selector {
-  width: 23.5%;
+  width: 24%;
   height: 80px;
   padding-left: 10px;
   padding-top: 2px;
@@ -355,7 +354,10 @@ h1 {
 }
 
 .active-desc {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%
 }
 
 #project-description p {
@@ -373,16 +375,30 @@ h1 {
   font-style: italic;
 }
 
-
 .githubBtn {
-  top: 700px;
-  width: 200px;
-  margin: 0 auto;
-  vertical-align: bottom;
-  padding: 20px;
-  background-color: red;
-/*  background: linear-gradient(90deg, #E5FF00, #0EAD00, #E5FF00);
-*/  background-size: 300% 300%;
+  display: flex;
+  right: 30px;
+  width: 80%;
+  padding: 15px;
+  margin: 0 auto 60px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(120deg, #a51e00, #fffa00);
+  background-size: 150% 150%;
+}
+
+.githubBtn span {
+  margin-top: 5px;
+}
+
+
+.github-link{
+  margin-left: 15px;
+  margin-right: 4px;
+  width: 30px;  
+  height: 30px;
 }
 
 
@@ -573,10 +589,10 @@ h1 {
   and (max-device-width: 1300px)
   {
     #current-project {
-      height: 400px;
+      height: 430px;
     }
     #project-description {
-      height: 380px;
+      height: 410px;
     }
     #project-description p {
       font-size: 13px;
@@ -585,8 +601,26 @@ h1 {
       font-size: 13px;
     }
     .githubBtn {
+      padding: 5px 2px;
       font-size: 13px;
-      width: 140px;
+      width: 90%;
     }
-}
+
+    .githubBtn img {
+      height: 15px;
+      width: 15px;
+      margin-top: 4px;
+    }
+
+    .githubBtn span {
+      margin-bottom: 5px;
+    }
+
+    .project-selector {
+      width: 23.5%;
+   }
+    #project-description {
+      height: 96%;
+    }
+ }   
 
