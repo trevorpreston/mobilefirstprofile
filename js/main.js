@@ -5,7 +5,9 @@ $(function() {
   $('.project-selector').on('mouseenter', updateProjectDisplay)
 
   function updateProjectDisplay(){
-    $('#current-project').css('background-image',"url('./images/projects/" + event.target.id +".png')")
+    let imageUrl = "url('./images/projects/" + event.target.id +".png')"
+    console.log(imageUrl)
+    $('#current-project').css('background-image', imageUrl)
   }
 
   function activeProject(){

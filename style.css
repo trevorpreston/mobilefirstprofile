@@ -333,8 +333,8 @@ h1 {
 .project-selector {
   width: 24%;
   height: 80px;
-  padding-top: 10px;
   padding-left: 10px;
+  padding-top: 2px;
   background-color: #757575;
   color: #fafafa;
   font-size: 35px;
@@ -343,6 +343,7 @@ h1 {
 
 .active-project{
   background-color: #3B3B3B;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
 }
 
 .proj-desc {
@@ -355,6 +356,17 @@ h1 {
 
 #project-description p {
   font-size: 18px;
+}
+
+.project-name {
+  margin: 0px;
+}
+
+.project-tech {
+  color: #cecece;
+  font-size: 12px;
+  margin: 0px;
+  font-style: italic;
 }
 
 
