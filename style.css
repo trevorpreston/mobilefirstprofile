@@ -294,8 +294,8 @@ h1 {
 }
 
 #project-container {
+  height: 65%;
   width: 70%;
-  min-width: 1100px;
   margin: 20px auto 0;
 }
 
@@ -305,8 +305,6 @@ h1 {
   background-image: url('./images/projects/robotanist.png');
   background-size: auto 135%;
   background-repeat: no-repeat;
-  height: 50%;
-  width: 100%;
   margin: 0 auto;
 }
 
