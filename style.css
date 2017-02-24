@@ -6,6 +6,7 @@ body{
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 nav{
   background-color: transparent;
   margin-top: 20%;
@@ -150,21 +151,6 @@ h1 {
   box-shadow: 0 3px 2px rgba(0,0,0,0.16), 0 3px 2px rgba(0,0,0,0.23);
 
 }
-/*#skills-button{
-  background: linear-gradient(141deg, #119990 0%, #2B93BA 50%);
-}
-
-#skills-button:hover{
-  background: linear-gradient(270deg, #18a2f0, #18f0b8);
-}
-
-#resume-button{
-  background: linear-gradient(141deg, #2B93BA 0%, #119990 70%);
-}
-
-#resume-button:hover{
-  background: linear-gradient(270deg, #18f0b8, #18a2f0);
-}*/
 
 .info-button:hover{
   cursor: pointer
@@ -282,7 +268,7 @@ display: inline-block;
   background-color:black;
   color: white;
   display: inline-block;
-  width: 50vw;
+  width: 57vw;
   min-width: 600px;
   text-align: center;
   padding: 8px 15px;
@@ -608,22 +594,7 @@ display: inline-block;
   opacity: .8;
 }
 
-/*@media only screen 
-  and (min-device-height: 500px) 
-  and (max-device-height: 700px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    * {
-      display: none;
-    }
 
-    .mobileDetected {
-      display: block;
-      color: black;
-      font-size: 25px
-
-    }
-}*/
 
 
 @media only screen 
@@ -688,3 +659,98 @@ display: inline-block;
 
  }   
 
+@media only screen 
+  and (min-device-height: 500px) 
+  and (max-device-height: 800px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+
+    body{
+      display: block;
+      background: linear-gradient(-45deg, #db5640, #18a2f0, #18f0b8);
+      background-size: 400% 400%;
+      -webkit-animation: Gradient 9s ease infinite;
+      -moz-animation: Gradient 9s ease infinite;
+      animation: Gradient 9s ease infinite;
+      height: 100vh;
+      width: 100vw;
+      text-align: center
+    }
+
+    body  *{
+      display: none
+    }
+
+    .mobileDetected {
+      font-family: 'Arvo', serif;
+      display: inline-block;
+      width: 60vw;
+      color: white;
+      font-size: 70px;
+    }
+
+    #mobile1{
+      margin-top: 20vh
+    }
+
+    #nav {
+      display: none;
+    }
+
+    .nav-el {
+      display: none;
+    }
+
+/*    p {
+      font-size: 25px;
+    }
+    .scroller-parent {
+      width: 100vw;
+      margin: 40% auto;
+    }
+    .scroller-parent p {
+      font-size: 80px;
+    }
+    #scroller-2 {
+      width: 100vw;
+      height: 80vh;
+    }
+    #about-container {
+        width: 75%;
+    }
+    #nav {
+      background-color: transparent;
+      justify-content: space-around;
+      margin: 0;
+      margin-top: 0px;
+      height: 260px;
+      width: 100vw;
+      z-index: 2;
+      float: top;
+      position: fixed;
+      display: none;
+    }
+
+    .nav-el{
+      background-color: #828282;
+      float: left;
+      list-style: none;
+      padding: 0px;
+      height: 70px;
+      width: calc(100%  /3);;
+      border-width: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+
+    .check{
+      height: 0px;
+      width: 0px;
+      margin: 0;
+    }*/
+
+
+
+
+}
